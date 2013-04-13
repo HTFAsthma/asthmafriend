@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675254231719FC1D00CAB94E /* LPHInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675254221719FC1D00CAB94E /* LPHInitialViewController.m */; };
 		67A691271719F771005FFFF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A691261719F771005FFFF4 /* UIKit.framework */; };
 		67A691291719F771005FFFF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A691281719F771005FFFF4 /* Foundation.framework */; };
 		67A6912B1719F771005FFFF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A6912A1719F771005FFFF4 /* CoreGraphics.framework */; };
@@ -18,8 +19,6 @@
 		67A6913D1719F771005FFFF4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A6913C1719F771005FFFF4 /* Default-568h@2x.png */; };
 		67A691401719F771005FFFF4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A6913E1719F771005FFFF4 /* MainStoryboard_iPhone.storyboard */; };
 		67A691431719F771005FFFF4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A691411719F771005FFFF4 /* MainStoryboard_iPad.storyboard */; };
-		67A691461719F771005FFFF4 /* LPHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A691451719F771005FFFF4 /* LPHMainViewController.m */; };
-		67A691491719F771005FFFF4 /* LPHFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A691481719F771005FFFF4 /* LPHFlipsideViewController.m */; };
 		67A691511719F771005FFFF4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A691501719F771005FFFF4 /* SenTestingKit.framework */; };
 		67A691521719F771005FFFF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A691261719F771005FFFF4 /* UIKit.framework */; };
 		67A691531719F771005FFFF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A691281719F771005FFFF4 /* Foundation.framework */; };
@@ -38,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		675254211719FC1D00CAB94E /* LPHInitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHInitialViewController.h; sourceTree = "<group>"; };
+		675254221719FC1D00CAB94E /* LPHInitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHInitialViewController.m; sourceTree = "<group>"; };
 		67A691231719F771005FFFF4 /* AsthmaFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsthmaFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A691261719F771005FFFF4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		67A691281719F771005FFFF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,10 +54,6 @@
 		67A6913C1719F771005FFFF4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		67A6913F1719F771005FFFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		67A691421719F771005FFFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		67A691441719F771005FFFF4 /* LPHMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPHMainViewController.h; sourceTree = "<group>"; };
-		67A691451719F771005FFFF4 /* LPHMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPHMainViewController.m; sourceTree = "<group>"; };
-		67A691471719F771005FFFF4 /* LPHFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPHFlipsideViewController.h; sourceTree = "<group>"; };
-		67A691481719F771005FFFF4 /* LPHFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPHFlipsideViewController.m; sourceTree = "<group>"; };
 		67A6914F1719F771005FFFF4 /* AsthmaFriendTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsthmaFriendTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A691501719F771005FFFF4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		67A691581719F771005FFFF4 /* AsthmaFriendTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AsthmaFriendTests-Info.plist"; sourceTree = "<group>"; };
@@ -124,12 +121,10 @@
 			children = (
 				67A691351719F771005FFFF4 /* LPHAppDelegate.h */,
 				67A691361719F771005FFFF4 /* LPHAppDelegate.m */,
+				675254211719FC1D00CAB94E /* LPHInitialViewController.h */,
+				675254221719FC1D00CAB94E /* LPHInitialViewController.m */,
 				67A6913E1719F771005FFFF4 /* MainStoryboard_iPhone.storyboard */,
 				67A691411719F771005FFFF4 /* MainStoryboard_iPad.storyboard */,
-				67A691441719F771005FFFF4 /* LPHMainViewController.h */,
-				67A691451719F771005FFFF4 /* LPHMainViewController.m */,
-				67A691471719F771005FFFF4 /* LPHFlipsideViewController.h */,
-				67A691481719F771005FFFF4 /* LPHFlipsideViewController.m */,
 				67A6912D1719F771005FFFF4 /* Supporting Files */,
 			);
 			path = AsthmaFriend;
@@ -282,8 +277,7 @@
 			files = (
 				67A691331719F771005FFFF4 /* main.m in Sources */,
 				67A691371719F771005FFFF4 /* LPHAppDelegate.m in Sources */,
-				67A691461719F771005FFFF4 /* LPHMainViewController.m in Sources */,
-				67A691491719F771005FFFF4 /* LPHFlipsideViewController.m in Sources */,
+				675254231719FC1D00CAB94E /* LPHInitialViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +468,7 @@
 				67A691631719F771005FFFF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67A691641719F771005FFFF4 /* Build configuration list for PBXNativeTarget "AsthmaFriendTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +477,7 @@
 				67A691661719F771005FFFF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
