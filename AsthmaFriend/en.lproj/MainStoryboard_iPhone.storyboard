@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="202" y="-589"/>
         </scene>
-        <!--Blow View-->
+        <!--Asthma View-->
         <scene sceneID="VbJ-nX-3NZ">
             <objects>
-                <viewController title="Asthma View" id="HXY-8A-Cgi" userLabel="Blow View" sceneMemberID="viewController">
+                <viewController title="Asthma View" id="HXY-8A-Cgi" userLabel="Asthma View" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="taR-1U-mON">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="166" y="55"/>
         </scene>
-        <!--Blow View-->
+        <!--History View-->
         <scene sceneID="UJw-oh-HZl">
             <objects>
-                <viewController title="History View" id="Rdf-Ej-cG4" userLabel="Blow View" sceneMemberID="viewController">
+                <viewController title="History View" id="Rdf-Ej-cG4" userLabel="History View" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bpc-e4-7RR">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -171,7 +171,7 @@
         <!--Blow View-->
         <scene sceneID="C5q-cG-T0Z">
             <objects>
-                <viewController title="Blow View" id="Dou-QZ-xTf" userLabel="Blow View" sceneMemberID="viewController">
+                <viewController title="Blow View" id="Dou-QZ-xTf" userLabel="Blow View" customClass="LPHBlowViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bj8-GJ-IEW">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -197,6 +197,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorPress:" destination="Dou-QZ-xTf" eventType="touchUpInside" id="MtG-Hv-M2y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obb-WD-pJC">
                                 <constraints>
@@ -210,6 +213,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorPress:" destination="Dou-QZ-xTf" eventType="touchUpInside" id="6Ti-6E-5SD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnO-xm-l22">
                                 <constraints>
@@ -223,10 +229,20 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorPress:" destination="Dou-QZ-xTf" eventType="touchUpInside" id="R8D-fy-BcJ"/>
+                                </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Last update:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFt-ni-Tzj">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rFt-ni-Tzj" secondAttribute="bottom" constant="118" id="25P-Ym-g8Q"/>
+                            <constraint firstItem="rFt-ni-Tzj" firstAttribute="leading" secondItem="Bj8-GJ-IEW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2gm-ne-va9"/>
                             <constraint firstItem="QnO-xm-l22" firstAttribute="centerX" secondItem="Bj8-GJ-IEW" secondAttribute="centerX" type="default" id="6MY-SW-kbJ"/>
                             <constraint firstItem="XB4-nl-M0m" firstAttribute="leading" secondItem="Bj8-GJ-IEW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9yi-OE-NxH"/>
                             <constraint firstItem="QnO-xm-l22" firstAttribute="bottom" secondItem="XXS-88-6xc" secondAttribute="bottom" type="default" id="FYI-Jw-U8Z"/>
@@ -240,6 +256,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Blow" id="Jn7-QC-97m"/>
+                    <connections>
+                        <outlet property="lastBlownLabel" destination="rFt-ni-Tzj" id="RHZ-vz-2LE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMO-Me-i2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -291,6 +310,13 @@
         <image name="yellowb.png" width="100" height="100"/>
     </resources>
     <classes>
+        <class className="LPHBlowViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHBlowViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="colorPress:"/>
+                <relationship kind="outlet" name="lastBlownLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="LPHInitialViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHInitialViewController.h"/>
         </class>
