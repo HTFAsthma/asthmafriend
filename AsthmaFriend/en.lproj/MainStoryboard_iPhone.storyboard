@@ -60,10 +60,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="B3Z-K3-m40" kind="relationship" relationship="viewControllers" id="PiO-qG-YRA"/>
                         <segue destination="fBb-9w-kvd" kind="relationship" relationship="viewControllers" id="YuX-Nf-OfJ"/>
-                        <segue destination="Usf-d2-QoQ" kind="relationship" relationship="viewControllers" id="uqn-eu-Ms7"/>
                         <segue destination="XMk-MI-ys2" kind="relationship" relationship="viewControllers" id="jlE-4i-yBe"/>
+                        <segue destination="Usf-d2-QoQ" kind="relationship" relationship="viewControllers" id="uqn-eu-Ms7"/>
+                        <segue destination="B3Z-K3-m40" kind="relationship" relationship="viewControllers" id="PiO-qG-YRA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IL9-6x-Ncn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -74,9 +74,11 @@
         <scene sceneID="GB6-BO-YxD">
             <objects>
                 <navigationController title="Asthma Facts" definesPresentationContext="YES" id="B3Z-K3-m40" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Asthma Facts" id="n7Y-me-0w5"/>
+                    <tabBarItem key="tabBarItem" title="Asthma Facts" image="info.png" id="n7Y-me-0w5"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LBO-ag-YKT" userLabel="label">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="LBO-ag-YKT" userLabel="label">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -90,7 +92,7 @@
         <!--Blow View-->
         <scene sceneID="VbJ-nX-3NZ">
             <objects>
-                <viewController title="Blow View" id="HXY-8A-Cgi" userLabel="Blow View" sceneMemberID="viewController">
+                <viewController title="Asthma View" id="HXY-8A-Cgi" userLabel="Blow View" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="taR-1U-mON">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -106,9 +108,11 @@
         <scene sceneID="ebr-X0-fi0">
             <objects>
                 <navigationController title="History" definesPresentationContext="YES" id="Usf-d2-QoQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" id="Vhj-Tt-bKc"/>
+                    <tabBarItem key="tabBarItem" title="History" image="history.png" id="Vhj-Tt-bKc"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oFX-Za-3sj" userLabel="label">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="oFX-Za-3sj" userLabel="label">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -122,7 +126,7 @@
         <!--Blow View-->
         <scene sceneID="UJw-oh-HZl">
             <objects>
-                <viewController title="Blow View" id="Rdf-Ej-cG4" userLabel="Blow View" sceneMemberID="viewController">
+                <viewController title="History View" id="Rdf-Ej-cG4" userLabel="Blow View" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bpc-e4-7RR">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -138,9 +142,11 @@
         <scene sceneID="PHr-3M-sJB">
             <objects>
                 <navigationController title="Blow" definesPresentationContext="YES" id="fBb-9w-kvd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Blow" id="X6u-ZR-zaP"/>
+                    <tabBarItem key="tabBarItem" title="Blow" image="blow.png" id="X6u-ZR-zaP"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5yP-fi-aMr" userLabel="label">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="5yP-fi-aMr" userLabel="label">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -170,9 +176,11 @@
         <scene sceneID="FZN-FT-86g">
             <objects>
                 <navigationController title="Score" definesPresentationContext="YES" id="XMk-MI-ys2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Score" id="q58-lr-z1U"/>
+                    <tabBarItem key="tabBarItem" title="Rewards" image="badge.png" id="q58-lr-z1U"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pvc-BL-pXO" userLabel="label">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="Pvc-BL-pXO" userLabel="label">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -186,19 +194,25 @@
         <!--Blow View-->
         <scene sceneID="Oax-U4-oTk">
             <objects>
-                <viewController title="Blow View" id="Ioc-XX-lEJ" userLabel="Blow View" sceneMemberID="viewController">
+                <viewController title="Score View" id="Ioc-XX-lEJ" userLabel="Blow View" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hZh-AH-ZHe">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Score" id="hvK-AT-dzX"/>
+                    <navigationItem key="navigationItem" title="Rewards" id="hvK-AT-dzX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhn-Rp-2GX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="614" y="667"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="badge.png" width="30" height="30"/>
+        <image name="blow.png" width="23" height="30"/>
+        <image name="history.png" width="30" height="27"/>
+        <image name="info.png" width="30" height="30"/>
+    </resources>
     <classes>
         <class className="LPHInitialViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHInitialViewController.h"/>
