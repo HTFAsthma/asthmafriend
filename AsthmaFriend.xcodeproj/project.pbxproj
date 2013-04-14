@@ -38,6 +38,10 @@
 		FD442795171AC0B400946E0B /* blowScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FD442792171AC0B400946E0B /* blowScreen.png */; };
 		FD442798171AC37900946E0B /* LPHRewardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD442797171AC37900946E0B /* LPHRewardsViewController.m */; };
 		FD44279A171AC6D500946E0B /* login_button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FD442799171AC6D500946E0B /* login_button.jpeg */; };
+		FD44279C171AC80B00946E0B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FD44279B171AC80B00946E0B /* Default.png */; };
+		FD44279E171AC81300946E0B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD44279D171AC81300946E0B /* Default@2x.png */; };
+		FD4427A0171AC8CC00946E0B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD44279F171AC8CC00946E0B /* Icon@2x.png */; };
+		FD4427A2171ACA0000946E0B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD4427A1171ACA0000946E0B /* Icon.png */; };
 		FDFCDEF2171A3EA600569B97 /* LPHHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFCDEEC171A3EA600569B97 /* LPHHistoryViewController.m */; };
 		FDFCDEF3171A3EA600569B97 /* LPHHistoryWeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFCDEEE171A3EA600569B97 /* LPHHistoryWeekViewController.m */; };
 		FDFCDEF4171A3EA600569B97 /* LPHHistoryMonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFCDEF0171A3EA600569B97 /* LPHHistoryMonthViewController.m */; };
@@ -96,6 +100,10 @@
 		FD442796171AC37900946E0B /* LPHRewardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHRewardsViewController.h; sourceTree = "<group>"; };
 		FD442797171AC37900946E0B /* LPHRewardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHRewardsViewController.m; sourceTree = "<group>"; };
 		FD442799171AC6D500946E0B /* login_button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_button.jpeg; sourceTree = "<group>"; };
+		FD44279B171AC80B00946E0B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FD44279D171AC81300946E0B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FD44279F171AC8CC00946E0B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		FD4427A1171ACA0000946E0B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		FDFCDEEC171A3EA600569B97 /* LPHHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHHistoryViewController.m; sourceTree = "<group>"; };
 		FDFCDEED171A3EA600569B97 /* LPHHistoryWeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHHistoryWeekViewController.h; sourceTree = "<group>"; };
 		FDFCDEEE171A3EA600569B97 /* LPHHistoryWeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHHistoryWeekViewController.m; sourceTree = "<group>"; };
@@ -156,6 +164,10 @@
 		67A6911A1719F770005FFFF4 = {
 			isa = PBXGroup;
 			children = (
+				FD4427A1171ACA0000946E0B /* Icon.png */,
+				FD44279F171AC8CC00946E0B /* Icon@2x.png */,
+				FD44279D171AC81300946E0B /* Default@2x.png */,
+				FD44279B171AC80B00946E0B /* Default.png */,
 				67A6912C1719F771005FFFF4 /* AsthmaFriend */,
 				67A691561719F771005FFFF4 /* AsthmaFriendTests */,
 				67A691251719F771005FFFF4 /* Frameworks */,
@@ -198,12 +210,12 @@
 				675254221719FC1D00CAB94E /* LPHInitialViewController.m */,
 				6713AE45171A1B5C0041B09A /* LPHBlowViewController.h */,
 				6713AE46171A1B5C0041B09A /* LPHBlowViewController.m */,
+				FD442796171AC37900946E0B /* LPHRewardsViewController.h */,
+				FD442797171AC37900946E0B /* LPHRewardsViewController.m */,
 				67A6913E1719F771005FFFF4 /* MainStoryboard_iPhone.storyboard */,
 				67A691411719F771005FFFF4 /* MainStoryboard_iPad.storyboard */,
 				6713AE32171A047B0041B09A /* pngs */,
 				67A6912D1719F771005FFFF4 /* Supporting Files */,
-				FD442796171AC37900946E0B /* LPHRewardsViewController.h */,
-				FD442797171AC37900946E0B /* LPHRewardsViewController.m */,
 			);
 			path = AsthmaFriend;
 			sourceTree = "<group>";
@@ -334,6 +346,10 @@
 				FD442794171AC0B400946E0B /* pointScreen.png in Resources */,
 				FD442795171AC0B400946E0B /* blowScreen.png in Resources */,
 				FD44279A171AC6D500946E0B /* login_button.jpeg in Resources */,
+				FD44279C171AC80B00946E0B /* Default.png in Resources */,
+				FD44279E171AC81300946E0B /* Default@2x.png in Resources */,
+				FD4427A0171AC8CC00946E0B /* Icon@2x.png in Resources */,
+				FD4427A2171ACA0000946E0B /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
