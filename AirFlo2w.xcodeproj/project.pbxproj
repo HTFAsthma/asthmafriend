@@ -74,22 +74,22 @@
 		6713AE46171A1B5C0041B09A /* LPHBlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHBlowViewController.m; sourceTree = "<group>"; };
 		675254211719FC1D00CAB94E /* LPHInitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHInitialViewController.h; sourceTree = "<group>"; };
 		675254221719FC1D00CAB94E /* LPHInitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHInitialViewController.m; sourceTree = "<group>"; };
-		67A691231719F771005FFFF4 /* AsthmaFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsthmaFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A691231719F771005FFFF4 /* AirFlo2w.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirFlo2w.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A691261719F771005FFFF4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		67A691281719F771005FFFF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		67A6912A1719F771005FFFF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		67A6912E1719F771005FFFF4 /* AsthmaFriend-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AsthmaFriend-Info.plist"; sourceTree = "<group>"; };
+		67A6912E1719F771005FFFF4 /* AirFlo2w-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirFlo2w-Info.plist"; sourceTree = "<group>"; };
 		67A691301719F771005FFFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		67A691321719F771005FFFF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		67A691341719F771005FFFF4 /* AsthmaFriend-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AsthmaFriend-Prefix.pch"; sourceTree = "<group>"; };
+		67A691341719F771005FFFF4 /* AirFlo2w-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirFlo2w-Prefix.pch"; sourceTree = "<group>"; };
 		67A691351719F771005FFFF4 /* LPHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPHAppDelegate.h; sourceTree = "<group>"; };
 		67A691361719F771005FFFF4 /* LPHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPHAppDelegate.m; sourceTree = "<group>"; };
 		67A6913C1719F771005FFFF4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		67A6913F1719F771005FFFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		67A691421719F771005FFFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		67A6914F1719F771005FFFF4 /* AsthmaFriendTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsthmaFriendTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A6914F1719F771005FFFF4 /* AirFlo2wTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirFlo2wTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A691501719F771005FFFF4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		67A691581719F771005FFFF4 /* AsthmaFriendTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AsthmaFriendTests-Info.plist"; sourceTree = "<group>"; };
+		67A691581719F771005FFFF4 /* AirFlo2wTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirFlo2wTests-Info.plist"; sourceTree = "<group>"; };
 		67A6915A1719F771005FFFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		67A6915C1719F771005FFFF4 /* AsthmaFriendTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsthmaFriendTests.h; sourceTree = "<group>"; };
 		67A6915D1719F771005FFFF4 /* AsthmaFriendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsthmaFriendTests.m; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 		67A691241719F771005FFFF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				67A691231719F771005FFFF4 /* AsthmaFriend.app */,
-				67A6914F1719F771005FFFF4 /* AsthmaFriendTests.octest */,
+				67A691231719F771005FFFF4 /* AirFlo2w.app */,
+				67A6914F1719F771005FFFF4 /* AirFlo2wTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,10 +232,10 @@
 		67A6912D1719F771005FFFF4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				67A6912E1719F771005FFFF4 /* AsthmaFriend-Info.plist */,
+				67A6912E1719F771005FFFF4 /* AirFlo2w-Info.plist */,
 				67A6912F1719F771005FFFF4 /* InfoPlist.strings */,
 				67A691321719F771005FFFF4 /* main.m */,
-				67A691341719F771005FFFF4 /* AsthmaFriend-Prefix.pch */,
+				67A691341719F771005FFFF4 /* AirFlo2w-Prefix.pch */,
 				67A6913C1719F771005FFFF4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -254,7 +254,7 @@
 		67A691571719F771005FFFF4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				67A691581719F771005FFFF4 /* AsthmaFriendTests-Info.plist */,
+				67A691581719F771005FFFF4 /* AirFlo2wTests-Info.plist */,
 				67A691591719F771005FFFF4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -263,9 +263,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		67A691221719F770005FFFF4 /* AsthmaFriend */ = {
+		67A691221719F770005FFFF4 /* AirFlo2w */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67A691611719F771005FFFF4 /* Build configuration list for PBXNativeTarget "AsthmaFriend" */;
+			buildConfigurationList = 67A691611719F771005FFFF4 /* Build configuration list for PBXNativeTarget "AirFlo2w" */;
 			buildPhases = (
 				67A6911F1719F770005FFFF4 /* Sources */,
 				67A691201719F770005FFFF4 /* Frameworks */,
@@ -275,14 +275,14 @@
 			);
 			dependencies = (
 			);
-			name = AsthmaFriend;
+			name = AirFlo2w;
 			productName = AsthmaFriend;
-			productReference = 67A691231719F771005FFFF4 /* AsthmaFriend.app */;
+			productReference = 67A691231719F771005FFFF4 /* AirFlo2w.app */;
 			productType = "com.apple.product-type.application";
 		};
-		67A6914E1719F771005FFFF4 /* AsthmaFriendTests */ = {
+		67A6914E1719F771005FFFF4 /* AirFlo2wTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67A691641719F771005FFFF4 /* Build configuration list for PBXNativeTarget "AsthmaFriendTests" */;
+			buildConfigurationList = 67A691641719F771005FFFF4 /* Build configuration list for PBXNativeTarget "AirFlo2wTests" */;
 			buildPhases = (
 				67A6914A1719F771005FFFF4 /* Sources */,
 				67A6914B1719F771005FFFF4 /* Frameworks */,
@@ -294,9 +294,9 @@
 			dependencies = (
 				67A691551719F771005FFFF4 /* PBXTargetDependency */,
 			);
-			name = AsthmaFriendTests;
+			name = AirFlo2wTests;
 			productName = AsthmaFriendTests;
-			productReference = 67A6914F1719F771005FFFF4 /* AsthmaFriendTests.octest */;
+			productReference = 67A6914F1719F771005FFFF4 /* AirFlo2wTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -309,7 +309,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Laaph;
 			};
-			buildConfigurationList = 67A6911E1719F770005FFFF4 /* Build configuration list for PBXProject "AsthmaFriend" */;
+			buildConfigurationList = 67A6911E1719F770005FFFF4 /* Build configuration list for PBXProject "AirFlo2w" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -321,8 +321,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				67A691221719F770005FFFF4 /* AsthmaFriend */,
-				67A6914E1719F771005FFFF4 /* AsthmaFriendTests */,
+				67A691221719F770005FFFF4 /* AirFlo2w */,
+				67A6914E1719F771005FFFF4 /* AirFlo2wTests */,
 			);
 		};
 /* End PBXProject section */
@@ -416,7 +416,7 @@
 /* Begin PBXTargetDependency section */
 		67A691551719F771005FFFF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 67A691221719F770005FFFF4 /* AsthmaFriend */;
+			target = 67A691221719F770005FFFF4 /* AirFlo2w */;
 			targetProxy = 67A691541719F771005FFFF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -519,10 +519,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AsthmaFriend/AsthmaFriend-Prefix.pch";
-				INFOPLIST_FILE = "AsthmaFriend/AsthmaFriend-Info.plist";
+				GCC_PREFIX_HEADER = "AsthmaFriend/AirFlo2w-Prefix.pch";
+				INFOPLIST_FILE = "AsthmaFriend/AirFlo2w-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AirFlo2w;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -532,10 +532,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AsthmaFriend/AsthmaFriend-Prefix.pch";
-				INFOPLIST_FILE = "AsthmaFriend/AsthmaFriend-Info.plist";
+				GCC_PREFIX_HEADER = "AsthmaFriend/AirFlo2w-Prefix.pch";
+				INFOPLIST_FILE = "AsthmaFriend/AirFlo2w-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AirFlo2w;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -551,8 +551,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AsthmaFriend/AsthmaFriend-Prefix.pch";
-				INFOPLIST_FILE = "AsthmaFriendTests/AsthmaFriendTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "AsthmaFriendTests/AirFlo2wTests-Info.plist";
+				PRODUCT_NAME = AirFlo2wTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -568,8 +568,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AsthmaFriend/AsthmaFriend-Prefix.pch";
-				INFOPLIST_FILE = "AsthmaFriendTests/AsthmaFriendTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "AsthmaFriendTests/AirFlo2wTests-Info.plist";
+				PRODUCT_NAME = AirFlo2wTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -578,7 +578,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		67A6911E1719F770005FFFF4 /* Build configuration list for PBXProject "AsthmaFriend" */ = {
+		67A6911E1719F770005FFFF4 /* Build configuration list for PBXProject "AirFlo2w" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67A6915F1719F771005FFFF4 /* Debug */,
@@ -587,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67A691611719F771005FFFF4 /* Build configuration list for PBXNativeTarget "AsthmaFriend" */ = {
+		67A691611719F771005FFFF4 /* Build configuration list for PBXNativeTarget "AirFlo2w" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67A691621719F771005FFFF4 /* Debug */,
@@ -596,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67A691641719F771005FFFF4 /* Build configuration list for PBXNativeTarget "AsthmaFriendTests" */ = {
+		67A691641719F771005FFFF4 /* Build configuration list for PBXNativeTarget "AirFlo2wTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67A691651719F771005FFFF4 /* Debug */,
