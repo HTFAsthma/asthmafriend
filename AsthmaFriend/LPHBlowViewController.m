@@ -40,7 +40,7 @@
     }
 }
 
--(IBAction)colorPress:(id)sender
+- (IBAction)colorPress:(id)sender
 {
     NSDate *now = [NSDate date];
     lastBlownDate = now;
