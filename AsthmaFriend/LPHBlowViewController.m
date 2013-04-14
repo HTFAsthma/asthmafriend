@@ -63,13 +63,32 @@
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    if(![defaults boolForKey:@"testedToday"])
-    {
+  //  if(![defaults boolForKey:@"testedToday"])
+   // {
         int score = [defaults integerForKey:@"score"];
         score = score + 10;
         [defaults setInteger:score forKey:@"score"];
         [defaults setBool:YES forKey:@"testedToday"];
-	}
+        CGRect f = CGRectMake([sender frame].origin.x + 10, [sender frame].origin.y - 10, [sender frame].size.width, [sender frame].size.height);
+  
+        UILabel *l = [[UILabel alloc] init];
+        [l setText:@"+10"];
+        [l setFrame:f]; // ehhh...
+        [l setHidden:NO];
+        [l setBackgroundColor:[UIColor clearColor]];
+        [[self view] addSubview:l];
+        
+        [UIView animateWithDuration:1 animations:^{
+           l.frame = CGRectMake(f.origin.x, f.origin.y - 20, f.size.width, f.size.height);
+        } completion:^(BOOL finished){
+ 
+            if(finished)
+            {
+                [l setHidden:YES];
+            }
+        }];
+        
+	//}
     
     [defaults setObject:lastBlownDate forKey:@"lastBlowDate"];
     [defaults setBool:YES forKey:@"lastBlow"];
