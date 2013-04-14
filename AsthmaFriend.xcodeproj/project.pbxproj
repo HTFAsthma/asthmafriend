@@ -37,6 +37,7 @@
 		FD442794171AC0B400946E0B /* pointScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FD442791171AC0B400946E0B /* pointScreen.png */; };
 		FD442795171AC0B400946E0B /* blowScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FD442792171AC0B400946E0B /* blowScreen.png */; };
 		FD442798171AC37900946E0B /* LPHRewardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD442797171AC37900946E0B /* LPHRewardsViewController.m */; };
+		FD44279A171AC6D500946E0B /* login_button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FD442799171AC6D500946E0B /* login_button.jpeg */; };
 		FDFCDEF2171A3EA600569B97 /* LPHHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFCDEEC171A3EA600569B97 /* LPHHistoryViewController.m */; };
 		FDFCDEF3171A3EA600569B97 /* LPHHistoryWeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFCDEEE171A3EA600569B97 /* LPHHistoryWeekViewController.m */; };
 		FDFCDEF4171A3EA600569B97 /* LPHHistoryMonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFCDEF0171A3EA600569B97 /* LPHHistoryMonthViewController.m */; };
@@ -94,6 +95,7 @@
 		FD442792171AC0B400946E0B /* blowScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blowScreen.png; sourceTree = "<group>"; };
 		FD442796171AC37900946E0B /* LPHRewardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHRewardsViewController.h; sourceTree = "<group>"; };
 		FD442797171AC37900946E0B /* LPHRewardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHRewardsViewController.m; sourceTree = "<group>"; };
+		FD442799171AC6D500946E0B /* login_button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_button.jpeg; sourceTree = "<group>"; };
 		FDFCDEEC171A3EA600569B97 /* LPHHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHHistoryViewController.m; sourceTree = "<group>"; };
 		FDFCDEED171A3EA600569B97 /* LPHHistoryWeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHHistoryWeekViewController.h; sourceTree = "<group>"; };
 		FDFCDEEE171A3EA600569B97 /* LPHHistoryWeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHHistoryWeekViewController.m; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		6713AE32171A047B0041B09A /* pngs */ = {
 			isa = PBXGroup;
 			children = (
+				FD442799171AC6D500946E0B /* login_button.jpeg */,
 				FD442790171AC0B400946E0B /* scrore_badge.png */,
 				FD442791171AC0B400946E0B /* pointScreen.png */,
 				FD442792171AC0B400946E0B /* blowScreen.png */,
@@ -330,6 +333,7 @@
 				FD442793171AC0B400946E0B /* scrore_badge.png in Resources */,
 				FD442794171AC0B400946E0B /* pointScreen.png in Resources */,
 				FD442795171AC0B400946E0B /* blowScreen.png in Resources */,
+				FD44279A171AC6D500946E0B /* login_button.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
