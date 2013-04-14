@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fT6-Sk-wNb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fT6-Sk-wNb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -209,7 +209,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lV6-fK-psD">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lV6-fK-psD">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="FCG-rV-cgM"/>
                                     <constraint firstAttribute="height" constant="75" id="q88-n6-Ent"/>
@@ -226,7 +226,7 @@
                                     <action selector="colorPress:" destination="Dou-QZ-xTf" eventType="touchUpInside" id="uR4-2o-Ko4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyH-8D-WMh">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyH-8D-WMh">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="512-it-6F8"/>
                                 </constraints>
@@ -242,7 +242,7 @@
                                     <action selector="colorPress:" destination="Dou-QZ-xTf" eventType="touchUpInside" id="Tae-qU-Bp2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DI7-vk-NHE">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DI7-vk-NHE">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="YM7-Rw-M7s"/>
                                 </constraints>
@@ -258,20 +258,31 @@
                                     <action selector="colorPress:" destination="Dou-QZ-xTf" eventType="touchUpInside" id="pnI-bM-XMJ"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="259" translatesAutoresizingMaskIntoConstraints="NO" id="zzw-PV-N6R">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="GqJ-qm-YYa"/>
+                                    <constraint firstAttribute="height" constant="92" id="RxJ-Yg-S6S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.80000007149999997" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="3ii-oR-kK6" firstAttribute="leading" secondItem="Bj8-GJ-IEW" secondAttribute="leading" type="default" id="2Oe-u1-sow"/>
-                            <constraint firstAttribute="trailing" secondItem="DI7-vk-NHE" secondAttribute="trailing" constant="30" id="FhH-ck-RpS"/>
+                            <constraint firstItem="DI7-vk-NHE" firstAttribute="trailing" secondItem="zzw-PV-N6R" secondAttribute="trailing" type="default" id="4bC-mA-msy"/>
+                            <constraint firstItem="zzw-PV-N6R" firstAttribute="top" secondItem="gyH-8D-WMh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="AOZ-ai-XZx"/>
+                            <constraint firstItem="rFt-ni-Tzj" firstAttribute="centerX" secondItem="zzw-PV-N6R" secondAttribute="centerX" type="default" id="DlU-Yh-VpM"/>
+                            <constraint firstItem="zzw-PV-N6R" firstAttribute="top" secondItem="lV6-fK-psD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="EqM-x7-b6x"/>
                             <constraint firstItem="3ii-oR-kK6" firstAttribute="top" secondItem="Bj8-GJ-IEW" secondAttribute="top" type="default" id="Fyr-0E-Els"/>
-                            <constraint firstItem="DI7-vk-NHE" firstAttribute="bottom" secondItem="gyH-8D-WMh" secondAttribute="bottom" type="default" id="Qhv-tw-3d0"/>
                             <constraint firstItem="lV6-fK-psD" firstAttribute="top" secondItem="Bj8-GJ-IEW" secondAttribute="top" constant="111" id="SIR-PB-K9U"/>
-                            <constraint firstItem="lV6-fK-psD" firstAttribute="bottom" secondItem="gyH-8D-WMh" secondAttribute="bottom" type="default" id="SPT-A0-oVx"/>
+                            <constraint firstItem="zzw-PV-N6R" firstAttribute="leading" secondItem="lV6-fK-psD" secondAttribute="leading" type="default" id="VIf-3g-uk9"/>
                             <constraint firstItem="lV6-fK-psD" firstAttribute="top" secondItem="gyH-8D-WMh" secondAttribute="top" type="default" id="XV4-d5-laQ"/>
                             <constraint firstItem="rFt-ni-Tzj" firstAttribute="centerX" secondItem="3ii-oR-kK6" secondAttribute="centerX" type="default" id="Y3S-7N-GEQ"/>
-                            <constraint firstItem="lV6-fK-psD" firstAttribute="leading" secondItem="Bj8-GJ-IEW" secondAttribute="leading" constant="31" id="e8J-ir-WSR"/>
                             <constraint firstAttribute="bottom" secondItem="rFt-ni-Tzj" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="g4k-Xk-bS8"/>
                             <constraint firstItem="DI7-vk-NHE" firstAttribute="top" secondItem="gyH-8D-WMh" secondAttribute="top" type="default" id="iZi-Oz-tbb"/>
+                            <constraint firstItem="zzw-PV-N6R" firstAttribute="top" secondItem="DI7-vk-NHE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pei-nB-KEC"/>
                             <constraint firstItem="gyH-8D-WMh" firstAttribute="leading" secondItem="Bj8-GJ-IEW" secondAttribute="leading" constant="124" id="zIc-OC-p6e"/>
                         </constraints>
                     </view>
@@ -281,6 +292,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="informationLabel" destination="zzw-PV-N6R" id="pjY-uY-XfG"/>
                         <outlet property="lastBlownLabel" destination="rFt-ni-Tzj" id="RHZ-vz-2LE"/>
                     </connections>
                 </viewController>
@@ -513,6 +525,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHBlowViewController.h"/>
             <relationships>
                 <relationship kind="action" name="colorPress:"/>
+                <relationship kind="outlet" name="informationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="lastBlownLabel" candidateClass="UILabel"/>
             </relationships>
         </class>

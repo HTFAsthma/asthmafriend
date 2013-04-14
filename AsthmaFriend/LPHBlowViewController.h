@@ -13,6 +13,7 @@
     NSDate *lastBlownDate;
     bool lastBlownFlag;
     IBOutlet UILabel *lastBlownLabel;
+    IBOutlet UILabel *informationLabel;
 }
 -(IBAction)colorPress:(id)sender;
 @end

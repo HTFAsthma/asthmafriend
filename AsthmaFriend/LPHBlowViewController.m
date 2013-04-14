@@ -34,13 +34,14 @@
         lastBlownDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"lastBlowDate"];
     }
     
-    if(lastBlownFlag) {
+ /*   if(lastBlownFlag) {
         [lastBlownLabel setHidden:NO];
     } else {
         [lastBlownLabel setHidden:YES];
-    }
+    }*/
 	
-	[lastBlownLabel setHidden:YES];
+    [lastBlownLabel setText:@"Last Recording: Yesterday"];
+	[lastBlownLabel setHidden:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -55,18 +56,62 @@
     NSDate *now = [NSDate date];
     lastBlownDate = now;
     
-    [[NSUserDefaults standardUserDefaults] setObject:lastBlownDate forKey:@"lastBlowDate"];
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"lastBlow"];
     
-    [lastBlownLabel setText:[NSString stringWithFormat:@"Last recording: %@", lastBlownDate]];
+    [lastBlownLabel setText:[NSString stringWithFormat:@"Last recording: A few seconds ago"]];
     [lastBlownLabel setHidden:NO];
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	int score = [defaults integerForKey:@"score"];
-	score++;
-	[defaults setInteger:score forKey:@"score"];
-	[defaults synchronize];
-	
+    
+  //  if(![defaults boolForKey:@"testedToday"])
+   // {
+        int score = [defaults integerForKey:@"score"];
+        score = score + 10;
+        [defaults setInteger:score forKey:@"score"];
+        [defaults setBool:YES forKey:@"testedToday"];
+        CGRect f = CGRectMake([sender frame].origin.x + 10, [sender frame].origin.y - 10, [sender frame].size.width, [sender frame].size.height);
+  
+        UILabel *l = [[UILabel alloc] init];
+        [l setText:@"+10"];
+        [l setFrame:f]; // ehhh...
+        [l setHidden:NO];
+        [l setBackgroundColor:[UIColor clearColor]];
+        [[self view] addSubview:l];
+        
+        [UIView animateWithDuration:1 animations:^{
+           l.frame = CGRectMake(f.origin.x, f.origin.y - 20, f.size.width, f.size.height);
+        } completion:^(BOOL finished){
+ 
+            if(finished)
+            {
+                [l setHidden:YES];
+            }
+        }];
+        
+	//}
+    
+    [defaults setObject:lastBlownDate forKey:@"lastBlowDate"];
+    [defaults setBool:YES forKey:@"lastBlow"];
+    [defaults synchronize];
+    
+    [informationLabel setHidden:NO];
+    switch([sender tag])
+    {
+        case 1:
+            [informationLabel setText:@"Good news!  You seem to be breathing at full capacity.  Keep breathing!"];
+            break;
+        case 2:
+            [informationLabel setText:@"Breathing like this is not good.  Talk to the school nurse as soon as possible!"];
+            break;
+        case 3:
+            [informationLabel setText:@"This breathing is not good!  Seek medical attention immediately!"];
+            break;
+        default:
+            // Just to make the compiler happy
+            [informationLabel setHidden:YES]; // This will not blink
+            break;
+    }
+    
 	[LPHScoreManager setupScoreLabel:self.navigationItem];
 }
 

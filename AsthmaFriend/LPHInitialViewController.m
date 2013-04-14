@@ -33,6 +33,11 @@
 		[defaults setInteger:30 forKey:@"score"];
 		[defaults synchronize];
 	}
+    // Cheat
+    [defaults setInteger:30 forKey:@"score"];
+    [defaults setBool:NO forKey:@"testedToday"];
+    
+    [defaults synchronize];
 	// Do any additional setup after loading the view.
 }
 
