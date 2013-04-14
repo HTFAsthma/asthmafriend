@@ -28,8 +28,6 @@
 	scoreLabel.text = [NSString stringWithFormat:@"%d", [defaults integerForKey:@"score"]];
 	
 	[button setBackgroundImage:image forState:UIControlStateNormal];
-	[button addTarget:self action:@selector(showScore)
-	 forControlEvents:UIControlEventTouchUpInside];
 	[button setShowsTouchWhenHighlighted:YES];
 	
 	UIBarButtonItem *barButton =[[UIBarButtonItem alloc] initWithCustomView:view];
