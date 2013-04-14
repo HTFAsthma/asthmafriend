@@ -7,6 +7,7 @@
 //
 
 #import "LPHInitialViewController.h"
+#import "LPHScoreManager.h"
 
 @interface LPHInitialViewController ()
 
@@ -26,6 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	if([defaults integerForKey:@"score"] == 0)
+	{
+		[defaults setInteger:30 forKey:@"score"];
+		[defaults synchronize];
+	}
 	// Do any additional setup after loading the view.
 }
 

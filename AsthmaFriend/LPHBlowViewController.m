@@ -7,6 +7,7 @@
 //
 
 #import "LPHBlowViewController.h"
+#import "LPHScoreManager.h"
 
 @interface LPHBlowViewController ()
 
@@ -38,6 +39,15 @@
     } else {
         [lastBlownLabel setHidden:YES];
     }
+	
+	[lastBlownLabel setHidden:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+	
+	[LPHScoreManager setupScoreLabel:self.navigationItem];
 }
 
 - (IBAction)colorPress:(id)sender
@@ -50,7 +60,14 @@
     
     [lastBlownLabel setText:[NSString stringWithFormat:@"Last recording: %@", lastBlownDate]];
     [lastBlownLabel setHidden:NO];
-    
+	
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	int score = [defaults integerForKey:@"score"];
+	score++;
+	[defaults setInteger:score forKey:@"score"];
+	[defaults synchronize];
+	
+	[LPHScoreManager setupScoreLabel:self.navigationItem];
 }
 
 - (void)didReceiveMemoryWarning

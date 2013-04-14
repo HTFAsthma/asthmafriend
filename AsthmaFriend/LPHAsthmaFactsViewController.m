@@ -1,21 +1,19 @@
 //
-//  LPHRewardsViewController.m
+//  LPHAsthmaFactsViewController.m
 //  AsthmaFriend
 //
 //  Created by Krzysztof Grzywacz on 4/14/13.
 //  Copyright (c) 2013 Laaph. All rights reserved.
 //
 
-#import "LPHRewardsViewController.h"
+#import "LPHAsthmaFactsViewController.h"
 #import "LPHScoreManager.h"
 
-@interface LPHRewardsViewController ()
-
-@property (strong, nonatomic) UILabel *scoreLabel;
+@interface LPHAsthmaFactsViewController ()
 
 @end
 
-@implementation LPHRewardsViewController
+@implementation LPHAsthmaFactsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	// Do any additional setup after loading the view.
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -44,19 +43,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)firstRewardTapped:(id)sender {
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Reward"
-													message:@"Would like like to complete purchase of free music - coupon to AppStore?"
-												   delegate:self
-										  cancelButtonTitle:@"OK"
-										  otherButtonTitles:@"Cancel", nil];
-	[alert show];
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-
-	if (buttonIndex == 0)
-	{
-	}
-}
 @end

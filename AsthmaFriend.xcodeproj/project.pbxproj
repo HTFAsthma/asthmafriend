@@ -33,7 +33,7 @@
 		67A691531719F771005FFFF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A691281719F771005FFFF4 /* Foundation.framework */; };
 		67A6915B1719F771005FFFF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67A691591719F771005FFFF4 /* InfoPlist.strings */; };
 		67A6915E1719F771005FFFF4 /* AsthmaFriendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A6915D1719F771005FFFF4 /* AsthmaFriendTests.m */; };
-		FD442793171AC0B400946E0B /* scrore_badge.png in Resources */ = {isa = PBXBuildFile; fileRef = FD442790171AC0B400946E0B /* scrore_badge.png */; };
+		FD442793171AC0B400946E0B /* score_badge.png in Resources */ = {isa = PBXBuildFile; fileRef = FD442790171AC0B400946E0B /* score_badge.png */; };
 		FD442794171AC0B400946E0B /* pointScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FD442791171AC0B400946E0B /* pointScreen.png */; };
 		FD442795171AC0B400946E0B /* blowScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FD442792171AC0B400946E0B /* blowScreen.png */; };
 		FD442798171AC37900946E0B /* LPHRewardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD442797171AC37900946E0B /* LPHRewardsViewController.m */; };
@@ -42,6 +42,9 @@
 		FD44279E171AC81300946E0B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD44279D171AC81300946E0B /* Default@2x.png */; };
 		FD4427A0171AC8CC00946E0B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD44279F171AC8CC00946E0B /* Icon@2x.png */; };
 		FD4427A2171ACA0000946E0B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD4427A1171ACA0000946E0B /* Icon.png */; };
+		FD4427A4171B1BEE00946E0B /* score_badge_white.png in Resources */ = {isa = PBXBuildFile; fileRef = FD4427A3171B1BEE00946E0B /* score_badge_white.png */; };
+		FD4427A7171B1E3C00946E0B /* LPHScoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4427A6171B1E3C00946E0B /* LPHScoreManager.m */; };
+		FD4427AA171B230600946E0B /* LPHAsthmaFactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4427A9171B230600946E0B /* LPHAsthmaFactsViewController.m */; };
 		FDFCDEF2171A3EA600569B97 /* LPHHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFCDEEC171A3EA600569B97 /* LPHHistoryViewController.m */; };
 		FDFCDEF3171A3EA600569B97 /* LPHHistoryWeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFCDEEE171A3EA600569B97 /* LPHHistoryWeekViewController.m */; };
 		FDFCDEF4171A3EA600569B97 /* LPHHistoryMonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFCDEF0171A3EA600569B97 /* LPHHistoryMonthViewController.m */; };
@@ -94,7 +97,7 @@
 		67A6915A1719F771005FFFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		67A6915C1719F771005FFFF4 /* AsthmaFriendTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsthmaFriendTests.h; sourceTree = "<group>"; };
 		67A6915D1719F771005FFFF4 /* AsthmaFriendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsthmaFriendTests.m; sourceTree = "<group>"; };
-		FD442790171AC0B400946E0B /* scrore_badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrore_badge.png; sourceTree = "<group>"; };
+		FD442790171AC0B400946E0B /* score_badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = score_badge.png; sourceTree = "<group>"; };
 		FD442791171AC0B400946E0B /* pointScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointScreen.png; sourceTree = "<group>"; };
 		FD442792171AC0B400946E0B /* blowScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blowScreen.png; sourceTree = "<group>"; };
 		FD442796171AC37900946E0B /* LPHRewardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHRewardsViewController.h; sourceTree = "<group>"; };
@@ -104,6 +107,11 @@
 		FD44279D171AC81300946E0B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FD44279F171AC8CC00946E0B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		FD4427A1171ACA0000946E0B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FD4427A3171B1BEE00946E0B /* score_badge_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = score_badge_white.png; sourceTree = "<group>"; };
+		FD4427A5171B1E3C00946E0B /* LPHScoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHScoreManager.h; sourceTree = "<group>"; };
+		FD4427A6171B1E3C00946E0B /* LPHScoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHScoreManager.m; sourceTree = "<group>"; };
+		FD4427A8171B230600946E0B /* LPHAsthmaFactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHAsthmaFactsViewController.h; sourceTree = "<group>"; };
+		FD4427A9171B230600946E0B /* LPHAsthmaFactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHAsthmaFactsViewController.m; sourceTree = "<group>"; };
 		FDFCDEEC171A3EA600569B97 /* LPHHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHHistoryViewController.m; sourceTree = "<group>"; };
 		FDFCDEED171A3EA600569B97 /* LPHHistoryWeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHHistoryWeekViewController.h; sourceTree = "<group>"; };
 		FDFCDEEE171A3EA600569B97 /* LPHHistoryWeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHHistoryWeekViewController.m; sourceTree = "<group>"; };
@@ -142,8 +150,9 @@
 		6713AE32171A047B0041B09A /* pngs */ = {
 			isa = PBXGroup;
 			children = (
+				FD4427A3171B1BEE00946E0B /* score_badge_white.png */,
 				FD442799171AC6D500946E0B /* login_button.jpeg */,
-				FD442790171AC0B400946E0B /* scrore_badge.png */,
+				FD442790171AC0B400946E0B /* score_badge.png */,
 				FD442791171AC0B400946E0B /* pointScreen.png */,
 				FD442792171AC0B400946E0B /* blowScreen.png */,
 				FDFCDEF9171A3F8D00569B97 /* asthma-explanation.jpg */,
@@ -198,12 +207,12 @@
 		67A6912C1719F771005FFFF4 /* AsthmaFriend */ = {
 			isa = PBXGroup;
 			children = (
-				FDFCDEEC171A3EA600569B97 /* LPHHistoryViewController.m */,
 				FDFCDEED171A3EA600569B97 /* LPHHistoryWeekViewController.h */,
 				FDFCDEEE171A3EA600569B97 /* LPHHistoryWeekViewController.m */,
 				FDFCDEEF171A3EA600569B97 /* LPHHistoryMonthViewController.h */,
 				FDFCDEF0171A3EA600569B97 /* LPHHistoryMonthViewController.m */,
 				FDFCDEF1171A3EA600569B97 /* LPHHistoryViewController.h */,
+				FDFCDEEC171A3EA600569B97 /* LPHHistoryViewController.m */,
 				67A691351719F771005FFFF4 /* LPHAppDelegate.h */,
 				67A691361719F771005FFFF4 /* LPHAppDelegate.m */,
 				675254211719FC1D00CAB94E /* LPHInitialViewController.h */,
@@ -216,6 +225,10 @@
 				67A691411719F771005FFFF4 /* MainStoryboard_iPad.storyboard */,
 				6713AE32171A047B0041B09A /* pngs */,
 				67A6912D1719F771005FFFF4 /* Supporting Files */,
+				FD4427A5171B1E3C00946E0B /* LPHScoreManager.h */,
+				FD4427A6171B1E3C00946E0B /* LPHScoreManager.m */,
+				FD4427A8171B230600946E0B /* LPHAsthmaFactsViewController.h */,
+				FD4427A9171B230600946E0B /* LPHAsthmaFactsViewController.m */,
 			);
 			path = AsthmaFriend;
 			sourceTree = "<group>";
@@ -342,7 +355,7 @@
 				FDFCDEF7171A3EB500569B97 /* week.png in Resources */,
 				FDFCDEF8171A3EB500569B97 /* april_calendar_screen.png in Resources */,
 				FDFCDEFA171A3F8D00569B97 /* asthma-explanation.jpg in Resources */,
-				FD442793171AC0B400946E0B /* scrore_badge.png in Resources */,
+				FD442793171AC0B400946E0B /* score_badge.png in Resources */,
 				FD442794171AC0B400946E0B /* pointScreen.png in Resources */,
 				FD442795171AC0B400946E0B /* blowScreen.png in Resources */,
 				FD44279A171AC6D500946E0B /* login_button.jpeg in Resources */,
@@ -350,6 +363,7 @@
 				FD44279E171AC81300946E0B /* Default@2x.png in Resources */,
 				FD4427A0171AC8CC00946E0B /* Icon@2x.png in Resources */,
 				FD4427A2171ACA0000946E0B /* Icon.png in Resources */,
+				FD4427A4171B1BEE00946E0B /* score_badge_white.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +406,8 @@
 				FDFCDEF3171A3EA600569B97 /* LPHHistoryWeekViewController.m in Sources */,
 				FDFCDEF4171A3EA600569B97 /* LPHHistoryMonthViewController.m in Sources */,
 				FD442798171AC37900946E0B /* LPHRewardsViewController.m in Sources */,
+				FD4427A7171B1E3C00946E0B /* LPHScoreManager.m in Sources */,
+				FD4427AA171B230600946E0B /* LPHAsthmaFactsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

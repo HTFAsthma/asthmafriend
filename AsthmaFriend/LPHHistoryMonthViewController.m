@@ -7,6 +7,7 @@
 //
 
 #import "LPHHistoryMonthViewController.h"
+#import "LPHScoreManager.h"
 
 @interface LPHHistoryMonthViewController ()
 
@@ -27,6 +28,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+	
+	[LPHScoreManager setupScoreLabel:self.navigationItem];
 }
 
 - (void)didReceiveMemoryWarning

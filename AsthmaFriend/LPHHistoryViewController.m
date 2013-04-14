@@ -7,6 +7,7 @@
 //
 
 #import "LPHHistoryViewController.h"
+#import "LPHScoreManager.h"
 
 typedef enum HistoryViewMode : NSUInteger {
     WeekHistoryViewMode = 0,
@@ -43,6 +44,8 @@ typedef enum HistoryViewMode : NSUInteger {
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
+	
+	[LPHScoreManager setupScoreLabel:self.navigationItem];
 	
 	if(!_isLoaded)
 	{

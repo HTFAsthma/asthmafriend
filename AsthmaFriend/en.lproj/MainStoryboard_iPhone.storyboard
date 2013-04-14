@@ -126,7 +126,7 @@
         <!--Asthma View-->
         <scene sceneID="VbJ-nX-3NZ">
             <objects>
-                <viewController title="Asthma View" id="HXY-8A-Cgi" userLabel="Asthma View" sceneMemberID="viewController">
+                <viewController title="Asthma View" id="HXY-8A-Cgi" userLabel="Asthma View" customClass="LPHAsthmaFactsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="taR-1U-mON">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -145,7 +145,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Asthma Facts" id="UGV-Rg-Qih">
-                        <barButtonItem key="rightBarButtonItem" image="scrore_badge.png" id="aCq-33-fYp">
+                        <barButtonItem key="rightBarButtonItem" image="score_badge.png" id="aCq-33-fYp">
                             <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
@@ -276,7 +276,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Blow" id="Jn7-QC-97m">
-                        <barButtonItem key="rightBarButtonItem" image="scrore_badge.png" id="yGh-G2-3lZ">
+                        <barButtonItem key="rightBarButtonItem" image="score_badge.png" id="yGh-G2-3lZ">
                             <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
@@ -342,11 +342,7 @@
                             <constraint firstItem="sJl-Eb-sUC" firstAttribute="leading" secondItem="hZh-AH-ZHe" secondAttribute="leading" type="default" id="pkg-14-jqN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Rewards" id="hvK-AT-dzX">
-                        <barButtonItem key="rightBarButtonItem" image="scrore_badge.png" id="tXk-Rq-xp4">
-                            <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Rewards" id="hvK-AT-dzX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhn-Rp-2GX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -419,7 +415,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="je1-Tm-Tb6">
-                        <barButtonItem key="rightBarButtonItem" image="scrore_badge.png" id="N4U-r0-Y3c">
+                        <barButtonItem key="rightBarButtonItem" image="score_badge.png" id="N4U-r0-Y3c">
                             <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
@@ -506,10 +502,13 @@
         <image name="login_button.jpeg" width="481" height="68"/>
         <image name="login_screen_image.png" width="469" height="764"/>
         <image name="pointScreen.png" width="320" height="367"/>
-        <image name="scrore_badge.png" width="43" height="42"/>
+        <image name="score_badge.png" width="43" height="42"/>
         <image name="week.png" width="310" height="49"/>
     </resources>
     <classes>
+        <class className="LPHAsthmaFactsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHAsthmaFactsViewController.h"/>
+        </class>
         <class className="LPHBlowViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHBlowViewController.h"/>
             <relationships>
