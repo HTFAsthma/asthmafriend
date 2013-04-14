@@ -23,8 +23,6 @@
 		67A691311719F771005FFFF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67A6912F1719F771005FFFF4 /* InfoPlist.strings */; };
 		67A691331719F771005FFFF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A691321719F771005FFFF4 /* main.m */; };
 		67A691371719F771005FFFF4 /* LPHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A691361719F771005FFFF4 /* LPHAppDelegate.m */; };
-		67A691391719F771005FFFF4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A691381719F771005FFFF4 /* Default.png */; };
-		67A6913B1719F771005FFFF4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A6913A1719F771005FFFF4 /* Default@2x.png */; };
 		67A6913D1719F771005FFFF4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A6913C1719F771005FFFF4 /* Default-568h@2x.png */; };
 		67A691401719F771005FFFF4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A6913E1719F771005FFFF4 /* MainStoryboard_iPhone.storyboard */; };
 		67A691431719F771005FFFF4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A691411719F771005FFFF4 /* MainStoryboard_iPad.storyboard */; };
@@ -86,8 +84,6 @@
 		67A691341719F771005FFFF4 /* AsthmaFriend-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AsthmaFriend-Prefix.pch"; sourceTree = "<group>"; };
 		67A691351719F771005FFFF4 /* LPHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPHAppDelegate.h; sourceTree = "<group>"; };
 		67A691361719F771005FFFF4 /* LPHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPHAppDelegate.m; sourceTree = "<group>"; };
-		67A691381719F771005FFFF4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		67A6913A1719F771005FFFF4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		67A6913C1719F771005FFFF4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		67A6913F1719F771005FFFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		67A691421719F771005FFFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
@@ -240,8 +236,6 @@
 				67A6912F1719F771005FFFF4 /* InfoPlist.strings */,
 				67A691321719F771005FFFF4 /* main.m */,
 				67A691341719F771005FFFF4 /* AsthmaFriend-Prefix.pch */,
-				67A691381719F771005FFFF4 /* Default.png */,
-				67A6913A1719F771005FFFF4 /* Default@2x.png */,
 				67A6913C1719F771005FFFF4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -339,8 +333,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A691311719F771005FFFF4 /* InfoPlist.strings in Resources */,
-				67A691391719F771005FFFF4 /* Default.png in Resources */,
-				67A6913B1719F771005FFFF4 /* Default@2x.png in Resources */,
 				67A6913D1719F771005FFFF4 /* Default-568h@2x.png in Resources */,
 				67A691401719F771005FFFF4 /* MainStoryboard_iPhone.storyboard in Resources */,
 				67A691431719F771005FFFF4 /* MainStoryboard_iPad.storyboard in Resources */,
