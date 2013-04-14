@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fT6-Sk-wNb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fT6-Sk-wNb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -107,7 +107,19 @@
                     <view key="view" contentMode="scaleToFill" id="taR-1U-mON">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="asthma-explanation.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3p0-Df-8Wu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="366" id="luh-3e-vUU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000007149999997" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="3p0-Df-8Wu" firstAttribute="bottom" secondItem="taR-1U-mON" secondAttribute="bottom" type="default" id="Hmw-xU-kHb"/>
+                            <constraint firstItem="3p0-Df-8Wu" firstAttribute="trailing" secondItem="taR-1U-mON" secondAttribute="trailing" type="default" id="TNi-eA-JmF"/>
+                            <constraint firstItem="3p0-Df-8Wu" firstAttribute="leading" secondItem="taR-1U-mON" secondAttribute="leading" type="default" id="xSh-JG-sUl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Asthma Facts" id="UGV-Rg-Qih"/>
                 </viewController>
@@ -127,27 +139,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Rdf-Ej-cG4" kind="relationship" relationship="rootViewController" id="eRB-Fw-ZoI"/>
+                        <segue destination="p9h-eU-SGe" kind="relationship" relationship="rootViewController" id="kAg-Pd-Z5y"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vpR-9e-G88" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="166" y="55"/>
-        </scene>
-        <!--History View-->
-        <scene sceneID="UJw-oh-HZl">
-            <objects>
-                <viewController title="History View" id="Rdf-Ej-cG4" userLabel="History View" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Bpc-e4-7RR">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="History" id="vf1-Dk-kvn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SRG-AH-rD7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="630" y="67"/>
         </scene>
         <!--Navigation Controller - Blow-->
         <scene sceneID="PHr-3M-sJB">
@@ -239,7 +236,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.80000007149999997" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="rFt-ni-Tzj" secondAttribute="bottom" constant="118" id="25P-Ym-g8Q"/>
                             <constraint firstItem="rFt-ni-Tzj" firstAttribute="leading" secondItem="Bj8-GJ-IEW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2gm-ne-va9"/>
@@ -290,7 +287,7 @@
                     <view key="view" contentMode="scaleToFill" id="hZh-AH-ZHe">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.80000007149999997" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Rewards" id="hvK-AT-dzX"/>
                 </viewController>
@@ -298,8 +295,149 @@
             </objects>
             <point key="canvasLocation" x="614" y="667"/>
         </scene>
+        <!--History View Controller - History View-->
+        <scene sceneID="ulD-I3-Uth">
+            <objects>
+                <viewController title="History View" id="p9h-eU-SGe" customClass="LPHHistoryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZHq-gc-pcM">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="sPC-eq-FgE">
+                                <items>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="hjC-Fp-54h"/>
+                                    <barButtonItem style="plain" id="zjH-4s-uuH">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="vip-A4-G39">
+                                            <rect key="frame" x="54" y="8" width="214" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Week"/>
+                                                <segment title="Month"/>
+                                                <segment title="Year"/>
+                                            </segments>
+                                            <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                            <connections>
+                                                <action selector="segmentChanged:" destination="p9h-eU-SGe" eventType="valueChanged" id="A6l-cf-Wjn"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="HxA-yC-6i2"/>
+                                </items>
+                            </toolbar>
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAn-ZP-WGE">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="bwR-Z0-FOb" kind="embed" id="j3u-4f-WUJ"/>
+                                </connections>
+                            </containerView>
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkt-Fd-sBX">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Fx5-mJ-2SP" kind="embed" id="jFP-DY-JsF"/>
+                                </connections>
+                            </containerView>
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KG7-O8-Mvh">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="akW-Bi-vOW" kind="embed" id="YhA-Nt-i4d"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KG7-O8-Mvh" firstAttribute="leading" secondItem="ZHq-gc-pcM" secondAttribute="leading" type="default" id="2fM-kJ-R9M"/>
+                            <constraint firstItem="KG7-O8-Mvh" firstAttribute="trailing" secondItem="ZHq-gc-pcM" secondAttribute="trailing" type="default" id="4Ac-Ja-ENv"/>
+                            <constraint firstItem="jkt-Fd-sBX" firstAttribute="trailing" secondItem="ZHq-gc-pcM" secondAttribute="trailing" type="default" id="6E8-aH-uuK"/>
+                            <constraint firstItem="WAn-ZP-WGE" firstAttribute="leading" secondItem="ZHq-gc-pcM" secondAttribute="leading" type="default" id="9ln-OZ-wor"/>
+                            <constraint firstItem="jkt-Fd-sBX" firstAttribute="top" secondItem="WAn-ZP-WGE" secondAttribute="top" type="default" id="BYg-hb-PuM"/>
+                            <constraint firstItem="WAn-ZP-WGE" firstAttribute="bottom" secondItem="ZHq-gc-pcM" secondAttribute="bottom" type="default" id="Hvw-v1-w58"/>
+                            <constraint firstItem="sPC-eq-FgE" firstAttribute="leading" secondItem="ZHq-gc-pcM" secondAttribute="leading" type="default" id="QPB-YA-4pX"/>
+                            <constraint firstItem="WAn-ZP-WGE" firstAttribute="trailing" secondItem="ZHq-gc-pcM" secondAttribute="trailing" type="default" id="S4i-tG-Q46"/>
+                            <constraint firstItem="jkt-Fd-sBX" firstAttribute="leading" secondItem="ZHq-gc-pcM" secondAttribute="leading" type="default" id="U1o-PS-dwr"/>
+                            <constraint firstItem="sPC-eq-FgE" firstAttribute="trailing" secondItem="ZHq-gc-pcM" secondAttribute="trailing" type="default" id="WyJ-dH-T4i"/>
+                            <constraint firstItem="sPC-eq-FgE" firstAttribute="top" secondItem="ZHq-gc-pcM" secondAttribute="top" type="default" id="XL1-iM-42O"/>
+                            <constraint firstItem="jkt-Fd-sBX" firstAttribute="bottom" secondItem="ZHq-gc-pcM" secondAttribute="bottom" type="default" id="bm9-H9-s72"/>
+                            <constraint firstItem="WAn-ZP-WGE" firstAttribute="top" secondItem="KG7-O8-Mvh" secondAttribute="top" type="default" id="eDk-nP-Gf0"/>
+                            <constraint firstItem="WAn-ZP-WGE" firstAttribute="top" secondItem="sPC-eq-FgE" secondAttribute="bottom" type="default" id="ldx-fA-mc8"/>
+                            <constraint firstItem="KG7-O8-Mvh" firstAttribute="bottom" secondItem="ZHq-gc-pcM" secondAttribute="bottom" type="default" id="tX9-py-FBi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="History" id="je1-Tm-Tb6"/>
+                    <connections>
+                        <outlet property="monthView" destination="jkt-Fd-sBX" id="9x6-2D-LTe"/>
+                        <outlet property="periodSegmentedControl" destination="vip-A4-G39" id="dW7-3W-zDB"/>
+                        <outlet property="weekView" destination="WAn-ZP-WGE" id="brn-Ri-6Wc"/>
+                        <outlet property="yearView" destination="KG7-O8-Mvh" id="tm7-tU-YpZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D39-ok-l4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="63"/>
+        </scene>
+        <!--History Month View Controller-->
+        <scene sceneID="5Oc-ny-3vI">
+            <objects>
+                <viewController id="bwR-Z0-FOb" customClass="LPHHistoryMonthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RK8-8X-qBm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="323"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="week.png" translatesAutoresizingMaskIntoConstraints="NO" id="alZ-18-H7N"/>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000007152557373" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="alZ-18-H7N" firstAttribute="top" secondItem="RK8-8X-qBm" secondAttribute="top" constant="135" id="bvd-x4-jBg"/>
+                            <constraint firstItem="alZ-18-H7N" firstAttribute="centerX" secondItem="RK8-8X-qBm" secondAttribute="centerX" type="default" id="r9u-ua-MHD"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ic-0y-boW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288" y="104"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cvd-Pe-r6V">
+            <objects>
+                <viewController id="Fx5-mJ-2SP" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RSw-7o-cxT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="323"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="april_calendar_screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="cfe-Pb-49s"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cfe-Pb-49s" firstAttribute="top" secondItem="RSw-7o-cxT" secondAttribute="top" type="default" id="OWg-Vh-s8P"/>
+                            <constraint firstItem="cfe-Pb-49s" firstAttribute="bottom" secondItem="RSw-7o-cxT" secondAttribute="bottom" type="default" id="Pcc-NI-9PP"/>
+                            <constraint firstItem="cfe-Pb-49s" firstAttribute="leading" secondItem="RSw-7o-cxT" secondAttribute="leading" type="default" id="SxM-Rp-n0C"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GtK-wJ-p7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288" y="-331"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="h2W-Ho-cZa">
+            <objects>
+                <viewController id="akW-Bi-vOW" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MWt-wb-LIr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="323"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.80000007149999997" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DSO-fM-cGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="521"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="april_calendar_screen.png" width="320" height="320"/>
+        <image name="asthma-explanation.jpg" width="600" height="923"/>
         <image name="badge.png" width="30" height="30"/>
         <image name="blow.png" width="23" height="30"/>
         <image name="greenb.png" width="100" height="100"/>
@@ -307,6 +445,7 @@
         <image name="info.png" width="30" height="30"/>
         <image name="login_screen_image.png" width="469" height="764"/>
         <image name="redb.png" width="100" height="100"/>
+        <image name="week.png" width="310" height="49"/>
         <image name="yellowb.png" width="100" height="100"/>
     </resources>
     <classes>
@@ -315,6 +454,19 @@
             <relationships>
                 <relationship kind="action" name="colorPress:"/>
                 <relationship kind="outlet" name="lastBlownLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LPHHistoryMonthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHHistoryMonthViewController.h"/>
+        </class>
+        <class className="LPHHistoryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHHistoryViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="segmentChanged:"/>
+                <relationship kind="outlet" name="monthView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="periodSegmentedControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="weekView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="yearView" candidateClass="UIView"/>
             </relationships>
         </class>
         <class className="LPHInitialViewController" superclassName="UIViewController">
